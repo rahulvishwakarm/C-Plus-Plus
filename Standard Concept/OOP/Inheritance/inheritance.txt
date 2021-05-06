@@ -1,0 +1,8 @@
+Inheritance is the phenemenon in which one class acquire all the property of parent class
+
+Type of Inheritance:
+Single Inheritance
+Multiple Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
