@@ -1,0 +1,12 @@
+Polymorphism - Polymorphism means many form
+
+There are two type of Polymorphism:
+
+1. Compile time:
+a. Overloaded function is invoked by matching the type and number of arguments. Compiler select the appropriate function at complie time
+b. It is achived by function overloading and opertaor overloading which is also know as static binding
+c. It is achieved by function overloading and operator overloading.
+
+2. Run time:
+a. Overrided where more than one method is having the same name, number of parameters and the type of the parameters.
+b. It is achieved by virtual functions and pointers.
