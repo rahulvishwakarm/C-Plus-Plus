@@ -3,7 +3,9 @@
     search the outer containing block.
 */
 
-#include<stdio.h>
+#include<iostream>
+#include<conio.h>
+using namespace std;
 
 int fun();
 int a=10,b=20;
@@ -19,7 +21,6 @@ int fun()
     {
         int c;
         c=b/a;    // here value of a=5 and b=20
-        printf("%d",c);
+        cout<<c;
     }
 }
-
