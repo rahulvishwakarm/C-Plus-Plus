@@ -17,7 +17,7 @@ using namespace std;
     {
         int a = 10;
         a = fun1(a);
-        printf("%d",a);
+        cout<<a;
     }
 
     int fun1(int b)
