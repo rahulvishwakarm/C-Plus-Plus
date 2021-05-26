@@ -8,12 +8,6 @@ class Node
         int data;
         Node *prev;
         Node *next;
-        Node(int d)
-        {
-            data = d;
-            prev = NULL;
-            next = NULL;
-        }
 };
 
 Node *head = NULL;
@@ -22,7 +16,10 @@ Node *current = NULL;
 
 void insert(int d)
 {
-    Node *link = new Node(d);
+    Node *link =new Node();
+    link->data = d;
+    link->prev = NULL;
+    link->next = NULL;
 
     if(head==NULL)
     {
@@ -42,7 +39,11 @@ void insert(int d)
 
 void insertAtEnd(int IE)
 {
-    Node *instAtEndNode = new Node(66);
+    Node *instAtEndNode = new Node();
+    instAtEndNode->data = IE;
+    instAtEndNode->prev = NULL;
+    instAtEndNode->next = NULL;
+
     Node *keeptrack = head;
     
     while (keeptrack->next!=NULL)
