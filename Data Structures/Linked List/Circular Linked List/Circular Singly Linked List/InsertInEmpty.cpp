@@ -12,19 +12,19 @@ class Node
 int main()
 {
     Node *head = NULL;
-
-    // Node Creation
-    Node *first = new Node();
+    
+    // Creating the node
+    struct Node *first = new Node();
     first->data = 11;
     head = first;
     first->next = head;
-
-    // Traversing 
-    Node *ptr = head->next;
+    
+    // Travserse List
+    struct Node *ptr = head->next;
     do
     {
-        cout<<ptr->data;
+        printf("%d",ptr->data);
         ptr = ptr->next;
     }
-    while(ptr!=head->next);
+    while((ptr!=head->next));
 }
