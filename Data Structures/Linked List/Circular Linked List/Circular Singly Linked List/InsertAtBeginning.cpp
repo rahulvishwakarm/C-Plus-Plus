@@ -9,7 +9,7 @@ class Node
     Node *next;
 };
 
-Node *addToNull(struct Node *head,int d)
+Node *addToNull(Node *head,int d)
 {
     if (head != NULL)
         return head;
@@ -20,9 +20,9 @@ Node *addToNull(struct Node *head,int d)
     return head;
 };
 
-Node *addToBeginning(struct Node *head,int d)
+Node *addToBeginning(Node *head,int d)
 {
-    if(head = NULL)
+    if(head == NULL)
     {
         return addToNull(head,d);
     }
@@ -35,18 +35,20 @@ Node *addToBeginning(struct Node *head,int d)
 
 void traverse(Node *head)
 {
-    Node *ptr;
+    Node *ptr = head->next;
     if (head == NULL)
     {
-        printf("List is empty.");
+        cout<<"List is empty.";
         return;
     }
+    cout<<"[head]->";
     do
     {
-        printf("%d",ptr->data); 
+        cout<<ptr->data<<"->"; 
         ptr = ptr->next;
     }
     while(ptr!=head->next);
+    cout<<"[head]";
 };
 
 int main()
