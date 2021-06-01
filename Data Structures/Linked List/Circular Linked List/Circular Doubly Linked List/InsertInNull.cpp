@@ -22,6 +22,7 @@ Node *addToNull(Node *head,int data)
     lnk->prev = NULL;
     head = lnk;
     lnk->next = head;
+    lnk->prev = lnk->next;
     return head;
 };
 
