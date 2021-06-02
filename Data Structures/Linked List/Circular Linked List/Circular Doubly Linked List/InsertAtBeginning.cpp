@@ -36,9 +36,9 @@ Node *addAtBeginning(Node *head,int data)
     Node *lnk = new Node();
     lnk->data = data;
     lnk->next = head;
-    lnk->prev = head->next;
+    lnk->prev = head;
     head->next = lnk;
-    head->prev = lnk->next;
+    head->prev = lnk;
     return head;
 };
 
