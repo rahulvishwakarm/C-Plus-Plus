@@ -61,6 +61,10 @@ Node *InsertAfter(Node *head,int data)
     }
     lnk->next = ptr->next;
     ptr->next = lnk;
+    if(ptr==head)
+    {
+        head = head->next;
+    }
     return head;
 };
 
