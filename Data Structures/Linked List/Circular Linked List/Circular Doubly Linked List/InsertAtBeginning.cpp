@@ -35,10 +35,16 @@ Node *addAtBeginning(Node *head,int data)
     }
     Node *lnk = new Node();
     lnk->data = data;
-    lnk->next = head;
-    lnk->prev = head;
-    head->next = lnk;
+    Node *ptr = head;
+    while (ptr->next!=head)
+    {
+        ptr = ptr->next;
+    }
+    ptr->next = lnk;
+    lnk->prev = ptr;
     head->prev = lnk;
+    lnk->next = head;
+    head = lnk;
     return head;
 };
 
