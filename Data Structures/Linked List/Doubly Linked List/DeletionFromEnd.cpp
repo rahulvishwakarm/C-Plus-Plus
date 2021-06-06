@@ -40,15 +40,13 @@ void insert(int d)
 void deleteFromEnd()
 {   
     Node *deleteptr = head;
+    Node *ptr;
     while (deleteptr->next!=NULL)
     {
         deleteptr = deleteptr->next;
-        if(deleteptr->next->next==NULL)
-        {
-            deleteptr->next = NULL;
-        }
     }
-    
+    ptr = deleteptr->prev;
+    ptr->next = NULL;
 };
 
 void printList()
