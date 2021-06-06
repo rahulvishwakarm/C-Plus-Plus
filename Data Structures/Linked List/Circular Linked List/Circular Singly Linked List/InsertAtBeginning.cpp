@@ -27,9 +27,14 @@ Node *addToBeginning(Node *head,int d)
         return addToNull(head,d);
     }
     struct Node *lnk = new Node();
+    struct Node *temp = head;
     lnk->data = d;
-    lnk->next = head->next;
-    head->next = lnk;
+    do
+    {
+        temp = temp->next;
+    } while (temp->next!=head);
+    temp->next = lnk;
+    lnk->next = head;
     return head;
 };
 
