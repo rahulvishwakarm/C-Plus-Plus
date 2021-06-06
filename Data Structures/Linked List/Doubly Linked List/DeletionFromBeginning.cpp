@@ -47,7 +47,7 @@ void deleteFromBeg()
     {
         Node *ptr = head;
         head = head->next;
-        ptr = NULL;
+        head->prev = NULL;
     }
 };
 
